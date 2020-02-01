@@ -8,19 +8,24 @@
 
 import UIKit
 
-struct Product: Decodable {
-    let status: Int
-    let code: String
-    let product: Any
-    let status_verbose: String
-}
-
 class ProductResult: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    struct Product: Decodable {
+        let status_verbose: String
+        let product: SubProduct
+        let code: String
+        let status: Int
+        
+    }
+        
+    struct SubProduct: Decodable {
+        let packaging: String
+        
+    }
     
-    var product_data: [Any]
         
     let urlProduct = URL(string: "https://world.openfoodfacts.org/api/v0/product/737628064502.json")
 
@@ -36,10 +41,10 @@ class ProductResult: UIViewController {
             guard let data = data else { return }
             do {
                 var product = try JSONDecoder().decode( Product.self, from:data)
-                print(product.status_verbose)
+                print(product.product)
             }
             catch{
-                print("Product not found")
+                print("Product error")
             }
         }
     }

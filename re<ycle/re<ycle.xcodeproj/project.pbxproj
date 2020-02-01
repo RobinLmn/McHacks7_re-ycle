@@ -49,7 +49,7 @@
 		D67B836423E60F8000174A7B /* re_ycleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = re_ycleUITests.swift; sourceTree = "<group>"; };
 		D67B836623E60F8000174A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D67B837223E6116500174A7B /* BarcodeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeInput.swift; sourceTree = "<group>"; };
-		D67B83B223E61C5D00174A7B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../../Desktop/gyh/gyh/SceneDelegate.swift; sourceTree = "<group>"; };
+		D67B83B223E61C5D00174A7B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "re<ycle/SceneDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		D67B83B623E6278700174A7B /* ProductResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

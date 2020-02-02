@@ -16,20 +16,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMK-mO-d7q">
-                                <rect key="frame" x="0.0" y="55" width="375" height="541"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4M-fR-TWd">
-                                <rect key="frame" x="160" y="601" width="55" height="65"/>
+                                <rect key="frame" x="164" y="613" width="47" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="pencil.and.ellipsis.rectangle" catalog="system"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="tintColor" red="0.67455414570000005" green="0.83691674839999997" blue="0.63964079429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="keyboard.chevron.compact.down" catalog="system">
+                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="cAU-Jf-dVV" kind="show" id="WyG-C5-eRa"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" red="0.67455414570000005" green="0.83691674839999997" blue="0.63964079429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -45,22 +50,51 @@
             <objects>
                 <viewController storyboardIdentifier="Product Result" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3X1-uG-WTh" customClass="ProductResult" customModule="re_ycle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gnV-YG-QCI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Zj-wH-sCS">
-                                <rect key="frame" x="87" y="213" width="240" height="128"/>
+                                <rect key="frame" x="67" y="113" width="240" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjP-0d-8Kp">
+                                <rect key="frame" x="129" y="388" width="117" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eny-nG-xKn">
+                                <rect key="frame" x="129" y="388" width="117" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm6-TT-JOT">
+                                <rect key="frame" x="67" y="524" width="240" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRODUCT NOT FIND" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWB-DZ-ed7">
+                                <rect key="frame" x="84" y="37" width="207" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67455414570000005" green="0.83691674839999997" blue="0.63964079429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="inh-gn-2OS"/>
                     </view>
                     <navigationItem key="navigationItem" id="bJu-vr-VFF"/>
+                    <connections>
+                        <outlet property="explanationMessage" destination="wm6-TT-JOT" id="Kbk-4n-PXk"/>
+                        <outlet property="garbageLogo" destination="cjP-0d-8Kp" id="93B-dz-aU3"/>
+                        <outlet property="imageView" destination="6Zj-wH-sCS" id="Zoc-D3-1ry"/>
+                        <outlet property="nameLable" destination="pWB-DZ-ed7" id="tSe-c5-bj4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjT-pR-73c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="327"/>
+            <point key="canvasLocation" x="932" y="326.98650674662673"/>
         </scene>
         <!--Barcode Input-->
         <scene sceneID="1Xr-Ya-vUD">
@@ -70,27 +104,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1l-lh-wTd">
-                                <rect key="frame" x="131" y="336" width="113" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ENTER"/>
-                                <connections>
-                                    <action selector="onEnterTapped:" destination="cAU-Jf-dVV" eventType="touchUpInside" id="wEk-aw-HVH"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgT-0W-BEe">
-                                <rect key="frame" x="62" y="294" width="234" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter product bar code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgT-0W-BEe">
+                                <rect key="frame" x="69" y="273" width="236" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="YuU-s7-W6Y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1l-lh-wTd">
+                                <rect key="frame" x="136" y="341" width="102" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67455414570000005" green="0.83691674839999997" blue="0.63964079429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="ENTER">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onEnterTapped:" destination="cAU-Jf-dVV" eventType="touchUpInside" id="ev6-La-PpH"/>
+                                    <segue destination="3X1-uG-WTh" kind="showDetail" id="PRf-K4-t6h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qgT-0W-BEe" firstAttribute="leading" secondItem="vUS-if-TSS" secondAttribute="leading" constant="69" id="Cfa-of-920"/>
+                            <constraint firstItem="qgT-0W-BEe" firstAttribute="top" secondItem="vUS-if-TSS" secondAttribute="top" constant="273" id="ajm-75-L7B"/>
+                            <constraint firstItem="qgT-0W-BEe" firstAttribute="centerX" secondItem="Heu-ku-s7J" secondAttribute="centerX" id="jvT-Yl-rLX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vUS-if-TSS"/>
                     </view>
                     <navigationItem key="navigationItem" id="2ut-Nl-S6c"/>
                     <connections>
-                        <outlet property="barcodeField" destination="qgT-0W-BEe" id="dKF-qK-Slk"/>
+                        <outlet property="barcodeField" destination="qgT-0W-BEe" id="MJT-Zi-v1O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9q1-DD-zLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -99,6 +145,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil.and.ellipsis.rectangle" catalog="system" width="64" height="40"/>
+        <image name="keyboard.chevron.compact.down" catalog="system" width="64" height="44"/>
     </resources>
 </document>

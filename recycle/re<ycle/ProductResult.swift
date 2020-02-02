@@ -83,7 +83,17 @@ class ProductResult: UIViewController {
         "canette": "Recycle",
         "Canette": "Recycle",
         "cardboard": "Recycle",
-        "plastic bag": "Trash"
+        "plastic bag": "Trash",
+        "metal": "Recycle",
+        "Metal": "Recycle",
+        "Aluminium": "Recycle",
+        "aluminium": "Recycle",
+        "Glass": "Recyle",
+        "verre": "Recycle",
+        "glass": "Recycle",
+        "Verre": "Recycle",
+        "Plastique": "Recycle",
+        "Organic": "Compost"
         
         ]
     
@@ -111,26 +121,42 @@ class ProductResult: UIViewController {
                     }
                 }
                 else {
-                       // If no matching key found in garbageTypeDict
+                    bestGarbageType = "Unknown"
+                    explanationResult = "Unfortunently we don't have information about this product's packaging yet. Feel free to add it yourself at https://world.openfoodfacts.org"
+                       
                 }
         }
             
             if trashMaterials.count >= 1 {
                 bestGarbageType = "Trash"
                 for trash in trashMaterials {
-                    temp_text = temp_text + trash + ", "
+                    temp_text = temp_text + trash + " "
                 }
-                explanationResult = productName + " contains some " + temp_text + "and therefore has to go the Trash can."
+                explanationResult = "It contains some " + temp_text + ": Throw it to the Trash can :("
             }
                 
             
-            else {
+            else if recyclableMaterials.count >= 1 {
                 bestGarbageType = "Recycle"
                 for recycle in recyclableMaterials {
-                        temp_text = temp_text + recycle + ", "
+                        temp_text = temp_text + recycle + " "
                     }
-                    explanationResult = productName + " contains some " + temp_text + "and therefore has to be recycled."
+                    explanationResult = "It contains some " + temp_text + ": Recycle it!"
             }
+            
+            else if compostableMaterials.count >= 1 {
+                bestGarbageType = "Compost"
+                for compost in compostableMaterials {
+                        temp_text = temp_text + compost + " "
+                    }
+                    explanationResult = "It contains some " + temp_text + ": Compost it!"
+            }
+            
+            else {
+                bestGarbageType = "Unknown"
+                explanationResult = "Unfortunently we don't have information about this product's packaging yet. Feel free to add it yourself at https://world.openfoodfacts.org"
+            }
+            
         print(bestGarbageType, explanationResult)
         return(bestGarbageType, explanationResult)
     }
@@ -155,34 +181,96 @@ class ProductResult: UIViewController {
             do {
                 var productToAnalyze = try JSONDecoder().decode( Product.self, from:data)
                 var packagings = productToAnalyze.product.packaging
-                GlobalVariables.productName = productToAnalyze.product.product_name_en
-                DispatchQueue.main.async{
-                    self.nameLable.text = GlobalVariables.productName
-                }
-                GlobalVariables.packagingArray = packagings.components(separatedBy: ",")  // Creates an array with packaging elements
-                GlobalVariables.productImageURL = productToAnalyze.product.image_front_url
-                setImage(from: GlobalVariables.productImageURL)
-                print(GlobalVariables.packagingArray)
-                print(GlobalVariables.productName)
-                print(GlobalVariables.productImageURL)
-                print(BarcodeInput.BarcodeVariables.barcodeFieldText)
-                let (bestGarbageType, explanationResult) = garbageTypeCount(productName: GlobalVariables.productName, garbageTypeDict: garbageType, packagingArray: GlobalVariables.packagingArray)
-                print(bestGarbageType, explanationResult)
-                DispatchQueue.main.async{
-                    self.explanationMessage.text = explanationResult
+                
+                print("--------")
+                print(productToAnalyze.status)
+                print("--------")
+                print("--------")
+                
+                if (productToAnalyze.status == 1) {
+                    
+                    GlobalVariables.productName = productToAnalyze.product.product_name_en
+                    
+                    DispatchQueue.main.async{
+                        self.nameLable.text = GlobalVariables.productName
+                    }
+                    
+                    GlobalVariables.packagingArray = packagings.components(separatedBy: ",")  // Creates an array with packaging elements
+                    GlobalVariables.productImageURL = productToAnalyze.product.image_front_url
+                    setImage(from: GlobalVariables.productImageURL)
+                    print(GlobalVariables.packagingArray)
+                    print(GlobalVariables.productName)
+                    print(GlobalVariables.productImageURL)
+                    print(BarcodeInput.BarcodeVariables.barcodeFieldText)
+                    let (bestGarbageType, explanationResult) = garbageTypeCount(productName: GlobalVariables.productName, garbageTypeDict: garbageType, packagingArray: GlobalVariables.packagingArray)
+                    print(bestGarbageType, explanationResult)
+                    
+                    DispatchQueue.main.async{
+                        self.explanationMessage.text = explanationResult
+                    }
+                    
+                    if bestGarbageType == "Recycle" {
+                        
+                    DispatchQueue.main.async{
+                        self.garbageLogo.image = UIImage(named: "recycle_logo")
+                        }
+                    }
+                    else if bestGarbageType == "Trash" {
+                        DispatchQueue.main.async{
+                        self.garbageLogo.image = UIImage(named: "trash_logo")
+                        }
+                    }
+                    else if bestGarbageType == "Compost" {
+                        DispatchQueue.main.async{
+                        self.garbageLogo.image = UIImage(named: "compost_logo")
+                        }
+                    }
+                    else {
+                        DispatchQueue.main.async{
+                        self.garbageLogo.image = UIImage(named: "unknown_logo")
+                        }
+                    }
                 }
                 
-                if bestGarbageType == "Recycle" {
-                    self.garbageLogo.image = UIImage(named: "recycle_logo")
-                } else if bestGarbageType == "Trash" {
-                    self.garbageLogo.image = UIImage(named: "trash_logo")
+                else if (productToAnalyze.status == 0) {
+                    DispatchQueue.main.async{
+                        self.nameLable.text = "Unknown product"
+                    }
+                    
+                    DispatchQueue.main.async{
+                    self.garbageLogo.image = UIImage(named: "mistery_box")
+                    }
+                    
+                    DispatchQueue.main.async{
+                        self.explanationMessage.text = "Unfortunently we don't have information about this product. Feel free to add it yourself at https://world.openfoodfacts.org"
+                    }
+                    
+                    DispatchQueue.main.async{
+                    self.garbageLogo.image = UIImage(named: "unknown_logo")
+                    }
                 }
                 
-                //determineTrashAction(int: recycleCount,int: trashCount,int: compostCount)
-                //print(barcodeField)
+                
+                
             }
             catch{
-                print("Product error")
+                
+                DispatchQueue.main.async{
+                    self.nameLable.text = "Invalid Bar Code"
+                }
+                
+                DispatchQueue.main.async{
+                self.imageView.image = UIImage(named: "mistery_box")
+                }
+                
+                DispatchQueue.main.async{
+                    self.explanationMessage.text = "No Information on this product. Add it yourself at https://world.openfoodfacts.org"
+                }
+                
+                DispatchQueue.main.async{
+                self.garbageLogo.image = UIImage(named: "unknown_logo")
+                }
+                
             }
         }
     }

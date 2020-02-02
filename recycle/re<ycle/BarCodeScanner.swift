@@ -16,7 +16,6 @@ class BarCodeScanner: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
         
         @IBOutlet weak var imageView :UIImageView!
-        @IBOutlet var barCodeRawValueLabel :UILabel!
         
         let session = AVCaptureSession()
         lazy var vision = Vision.vision()
@@ -45,7 +44,7 @@ class BarCodeScanner: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     }
                     
                     for barcode in barcodes! {
-                         print(barcode.rawValue!)
+                        BarcodeInput.BarcodeVariables.barcodeFieldText = barcode.rawValue!
                          let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
 
                         let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Product Result") as! ProductResult

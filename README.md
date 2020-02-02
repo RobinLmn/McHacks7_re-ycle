@@ -1,6 +1,10 @@
 # McHacks7
 iOS scanner to help recycle your products. 
 
+## DOWNLOAD
+You will have to install Firebase by Google to run the project. Demo is available at;
+https://www.youtube.com/watch?v=3d5OHl6luGE&feature=emb_logo
+
 ## Inspiration
 
 With our world literally on fire, every contribution can make a big difference to the planet. We wanted to end the struggle of recycling by creating an app able to scan your trash and tell you where it belongs to.

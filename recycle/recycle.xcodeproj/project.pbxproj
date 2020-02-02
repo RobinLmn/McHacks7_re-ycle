@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41ED669A19E8CCF5D678AC70 /* Pods_recycle_recycleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665C5946B1269A20C7A4AA6C /* Pods_recycle_recycleUITests.framework */; };
+		587BD3195B56C4C87791F7DB /* Pods_recycleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A012E07967E8BA0125408A9 /* Pods_recycleTests.framework */; };
+		8AD20285DC8674477D18BD28 /* Pods_recycle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD16D2D37F6F3A692D8DB70 /* Pods_recycle.framework */; };
+		D67B834323E60F7F00174A7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B834223E60F7F00174A7B /* AppDelegate.swift */; };
+		D67B834A23E60F7F00174A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67B834823E60F7F00174A7B /* Main.storyboard */; };
+		D67B834C23E60F8000174A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67B834B23E60F8000174A7B /* Assets.xcassets */; };
+		D67B834F23E60F8000174A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67B834D23E60F8000174A7B /* LaunchScreen.storyboard */; };
+		D67B835A23E60F8000174A7B /* re_ycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B835923E60F8000174A7B /* re_ycleTests.swift */; };
+		D67B836523E60F8000174A7B /* re_ycleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B836423E60F8000174A7B /* re_ycleUITests.swift */; };
+		D67B83B323E61C5D00174A7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B83B223E61C5D00174A7B /* SceneDelegate.swift */; };
+		D67B83B723E6278700174A7B /* ProductResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B83B623E6278700174A7B /* ProductResult.swift */; };
+		D67B83B923E6511900174A7B /* BarCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B83B823E6511900174A7B /* BarCodeScanner.swift */; };
+		D69BBF6B23E6720D00ADE5DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D69BBF6A23E6720C00ADE5DB /* GoogleService-Info.plist */; };
+		D69BBF6C23E6720D00ADE5DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D69BBF6A23E6720C00ADE5DB /* GoogleService-Info.plist */; };
+		D69BBF6D23E6720D00ADE5DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D69BBF6A23E6720C00ADE5DB /* GoogleService-Info.plist */; };
+		D69BBF7123E6909D00ADE5DB /* BarcodeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69BBF7023E6909D00ADE5DB /* BarcodeInput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D67B835623E60F8000174A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D67B833723E60F7F00174A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D67B833E23E60F7F00174A7B;
+			remoteInfo = "re<ycle";
+		};
+		D67B836123E60F8000174A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D67B833723E60F7F00174A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D67B833E23E60F7F00174A7B;
+			remoteInfo = "re<ycle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09888A0A915BBCC268D58AF9 /* Pods-re<ycleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-re<ycleTests.release.xcconfig"; path = "Target Support Files/Pods-re<ycleTests/Pods-re<ycleTests.release.xcconfig"; sourceTree = "<group>"; };
+		29D93A5DD29596011E369C90 /* Pods-re<ycle-re<ycleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-re<ycle-re<ycleUITests.debug.xcconfig"; path = "Target Support Files/Pods-re<ycle-re<ycleUITests/Pods-re<ycle-re<ycleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		357F6F43EF5446C1A06D14FB /* Pods-recycleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycleTests.release.xcconfig"; path = "Target Support Files/Pods-recycleTests/Pods-recycleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A012E07967E8BA0125408A9 /* Pods_recycleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recycleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		665C5946B1269A20C7A4AA6C /* Pods_recycle_recycleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recycle_recycleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D24372A42C663FD1FCA2062 /* Pods-re<ycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-re<ycle.debug.xcconfig"; path = "Target Support Files/Pods-re<ycle/Pods-re<ycle.debug.xcconfig"; sourceTree = "<group>"; };
+		9A30FD1A97405007E1137E3E /* Pods-recycle-recycleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycle-recycleUITests.debug.xcconfig"; path = "Target Support Files/Pods-recycle-recycleUITests/Pods-recycle-recycleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F402F0B7220B9149559AB6A /* Pods-recycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycle.debug.xcconfig"; path = "Target Support Files/Pods-recycle/Pods-recycle.debug.xcconfig"; sourceTree = "<group>"; };
+		B0DDD68001D08CAD61B536C6 /* Pods-recycle-recycleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycle-recycleUITests.release.xcconfig"; path = "Target Support Files/Pods-recycle-recycleUITests/Pods-recycle-recycleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C31B7AC6608C5D07594736B7 /* Pods-recycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycle.release.xcconfig"; path = "Target Support Files/Pods-recycle/Pods-recycle.release.xcconfig"; sourceTree = "<group>"; };
+		CCD1C6DC9AD4305155378470 /* Pods-re<ycle-re<ycleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-re<ycle-re<ycleUITests.release.xcconfig"; path = "Target Support Files/Pods-re<ycle-re<ycleUITests/Pods-re<ycle-re<ycleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D042949A25CAFBB7EE5D2821 /* Pods-recycleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recycleTests.debug.xcconfig"; path = "Target Support Files/Pods-recycleTests/Pods-recycleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D67B833F23E60F7F00174A7B /* re<ycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "re<ycle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67B834223E60F7F00174A7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D67B834923E60F7F00174A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D67B834B23E60F8000174A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D67B834E23E60F8000174A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D67B835023E60F8000174A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67B835523E60F8000174A7B /* recycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67B835923E60F8000174A7B /* re_ycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = re_ycleTests.swift; sourceTree = "<group>"; };
+		D67B835B23E60F8000174A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67B836023E60F8000174A7B /* recycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recycleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67B836423E60F8000174A7B /* re_ycleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = re_ycleUITests.swift; sourceTree = "<group>"; };
+		D67B836623E60F8000174A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67B83B223E61C5D00174A7B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "re<ycle/SceneDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		D67B83B623E6278700174A7B /* ProductResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResult.swift; sourceTree = "<group>"; };
+		D67B83B823E6511900174A7B /* BarCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScanner.swift; sourceTree = "<group>"; };
+		D69BBF6A23E6720C00ADE5DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D69BBF7023E6909D00ADE5DB /* BarcodeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarcodeInput.swift; path = ../../../../../Desktop/BarcodeInput.swift; sourceTree = "<group>"; };
+		D9D6818E47B21A6D6EF82962 /* Pods-re<ycleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-re<ycleTests.debug.xcconfig"; path = "Target Support Files/Pods-re<ycleTests/Pods-re<ycleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6CE28976FFBC9EDF1C1548D /* Pods-re<ycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-re<ycle.release.xcconfig"; path = "Target Support Files/Pods-re<ycle/Pods-re<ycle.release.xcconfig"; sourceTree = "<group>"; };
+		FAD16D2D37F6F3A692D8DB70 /* Pods_recycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D67B833C23E60F7F00174A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD20285DC8674477D18BD28 /* Pods_recycle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B835223E60F8000174A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587BD3195B56C4C87791F7DB /* Pods_recycleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B835D23E60F8000174A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41ED669A19E8CCF5D678AC70 /* Pods_recycle_recycleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4296EDBC935D32B2B2802C34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D24372A42C663FD1FCA2062 /* Pods-re<ycle.debug.xcconfig */,
+				F6CE28976FFBC9EDF1C1548D /* Pods-re<ycle.release.xcconfig */,
+				29D93A5DD29596011E369C90 /* Pods-re<ycle-re<ycleUITests.debug.xcconfig */,
+				CCD1C6DC9AD4305155378470 /* Pods-re<ycle-re<ycleUITests.release.xcconfig */,
+				D9D6818E47B21A6D6EF82962 /* Pods-re<ycleTests.debug.xcconfig */,
+				09888A0A915BBCC268D58AF9 /* Pods-re<ycleTests.release.xcconfig */,
+				9F402F0B7220B9149559AB6A /* Pods-recycle.debug.xcconfig */,
+				C31B7AC6608C5D07594736B7 /* Pods-recycle.release.xcconfig */,
+				9A30FD1A97405007E1137E3E /* Pods-recycle-recycleUITests.debug.xcconfig */,
+				B0DDD68001D08CAD61B536C6 /* Pods-recycle-recycleUITests.release.xcconfig */,
+				D042949A25CAFBB7EE5D2821 /* Pods-recycleTests.debug.xcconfig */,
+				357F6F43EF5446C1A06D14FB /* Pods-recycleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D67B833623E60F7F00174A7B = {
+			isa = PBXGroup;
+			children = (
+				D67B834123E60F7F00174A7B /* re<ycle */,
+				D67B835823E60F8000174A7B /* re<ycleTests */,
+				D67B836323E60F8000174A7B /* re<ycleUITests */,
+				D67B834023E60F7F00174A7B /* Products */,
+				4296EDBC935D32B2B2802C34 /* Pods */,
+				E8DD3950824FE514978BC21D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D67B834023E60F7F00174A7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D67B833F23E60F7F00174A7B /* re<ycle.app */,
+				D67B835523E60F8000174A7B /* recycleTests.xctest */,
+				D67B836023E60F8000174A7B /* recycleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D67B834123E60F7F00174A7B /* re<ycle */ = {
+			isa = PBXGroup;
+			children = (
+				D67B834223E60F7F00174A7B /* AppDelegate.swift */,
+				D67B83B223E61C5D00174A7B /* SceneDelegate.swift */,
+				D67B834B23E60F8000174A7B /* Assets.xcassets */,
+				D67B834823E60F7F00174A7B /* Main.storyboard */,
+				D67B834D23E60F8000174A7B /* LaunchScreen.storyboard */,
+				D69BBF7023E6909D00ADE5DB /* BarcodeInput.swift */,
+				D67B835023E60F8000174A7B /* Info.plist */,
+				D69BBF6A23E6720C00ADE5DB /* GoogleService-Info.plist */,
+				D67B83B623E6278700174A7B /* ProductResult.swift */,
+				D67B83B823E6511900174A7B /* BarCodeScanner.swift */,
+			);
+			path = "re<ycle";
+			sourceTree = "<group>";
+		};
+		D67B835823E60F8000174A7B /* re<ycleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D67B835923E60F8000174A7B /* re_ycleTests.swift */,
+				D67B835B23E60F8000174A7B /* Info.plist */,
+			);
+			path = "re<ycleTests";
+			sourceTree = "<group>";
+		};
+		D67B836323E60F8000174A7B /* re<ycleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D67B836423E60F8000174A7B /* re_ycleUITests.swift */,
+				D67B836623E60F8000174A7B /* Info.plist */,
+			);
+			path = "re<ycleUITests";
+			sourceTree = "<group>";
+		};
+		E8DD3950824FE514978BC21D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAD16D2D37F6F3A692D8DB70 /* Pods_recycle.framework */,
+				665C5946B1269A20C7A4AA6C /* Pods_recycle_recycleUITests.framework */,
+				5A012E07967E8BA0125408A9 /* Pods_recycleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D67B833E23E60F7F00174A7B /* recycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67B836923E60F8000174A7B /* Build configuration list for PBXNativeTarget "recycle" */;
+			buildPhases = (
+				5EBB530EC2B80EF9139C7ACE /* [CP] Check Pods Manifest.lock */,
+				D67B833B23E60F7F00174A7B /* Sources */,
+				D67B833C23E60F7F00174A7B /* Frameworks */,
+				D67B833D23E60F7F00174A7B /* Resources */,
+				037E215B9F246B8E5E4C123C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = recycle;
+			productName = "re<ycle";
+			productReference = D67B833F23E60F7F00174A7B /* re<ycle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D67B835423E60F8000174A7B /* recycleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67B836C23E60F8000174A7B /* Build configuration list for PBXNativeTarget "recycleTests" */;
+			buildPhases = (
+				C5A74B0559F20C1CC556329E /* [CP] Check Pods Manifest.lock */,
+				D67B835123E60F8000174A7B /* Sources */,
+				D67B835223E60F8000174A7B /* Frameworks */,
+				D67B835323E60F8000174A7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67B835723E60F8000174A7B /* PBXTargetDependency */,
+			);
+			name = recycleTests;
+			productName = "re<ycleTests";
+			productReference = D67B835523E60F8000174A7B /* recycleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D67B835F23E60F8000174A7B /* recycleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67B836F23E60F8000174A7B /* Build configuration list for PBXNativeTarget "recycleUITests" */;
+			buildPhases = (
+				C233D7028F9BF0885C8DE61A /* [CP] Check Pods Manifest.lock */,
+				D67B835C23E60F8000174A7B /* Sources */,
+				D67B835D23E60F8000174A7B /* Frameworks */,
+				D67B835E23E60F8000174A7B /* Resources */,
+				1834C177C1D2156F10FF2986 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67B836223E60F8000174A7B /* PBXTargetDependency */,
+			);
+			name = recycleUITests;
+			productName = "re<ycleUITests";
+			productReference = D67B836023E60F8000174A7B /* recycleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D67B833723E60F7F00174A7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lorne & Leman Corp";
+				TargetAttributes = {
+					D67B833E23E60F7F00174A7B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D67B835423E60F8000174A7B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D67B833E23E60F7F00174A7B;
+					};
+					D67B835F23E60F8000174A7B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D67B833E23E60F7F00174A7B;
+					};
+				};
+			};
+			buildConfigurationList = D67B833A23E60F7F00174A7B /* Build configuration list for PBXProject "recycle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D67B833623E60F7F00174A7B;
+			productRefGroup = D67B834023E60F7F00174A7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D67B833E23E60F7F00174A7B /* recycle */,
+				D67B835423E60F8000174A7B /* recycleTests */,
+				D67B835F23E60F8000174A7B /* recycleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D67B833D23E60F7F00174A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B834F23E60F8000174A7B /* LaunchScreen.storyboard in Resources */,
+				D69BBF6B23E6720D00ADE5DB /* GoogleService-Info.plist in Resources */,
+				D67B834C23E60F8000174A7B /* Assets.xcassets in Resources */,
+				D67B834A23E60F7F00174A7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B835323E60F8000174A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69BBF6C23E6720D00ADE5DB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B835E23E60F8000174A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69BBF6D23E6720D00ADE5DB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		037E215B9F246B8E5E4C123C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recycle/Pods-recycle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recycle/Pods-recycle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recycle/Pods-recycle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1834C177C1D2156F10FF2986 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recycle-recycleUITests/Pods-recycle-recycleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recycle-recycleUITests/Pods-recycle-recycleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recycle-recycleUITests/Pods-recycle-recycleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EBB530EC2B80EF9139C7ACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-recycle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C233D7028F9BF0885C8DE61A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-recycle-recycleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A74B0559F20C1CC556329E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-recycleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D67B833B23E60F7F00174A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B83B923E6511900174A7B /* BarCodeScanner.swift in Sources */,
+				D67B834323E60F7F00174A7B /* AppDelegate.swift in Sources */,
+				D67B83B723E6278700174A7B /* ProductResult.swift in Sources */,
+				D69BBF7123E6909D00ADE5DB /* BarcodeInput.swift in Sources */,
+				D67B83B323E61C5D00174A7B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B835123E60F8000174A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B835A23E60F8000174A7B /* re_ycleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B835C23E60F8000174A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B836523E60F8000174A7B /* re_ycleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D67B835723E60F8000174A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D67B833E23E60F7F00174A7B /* recycle */;
+			targetProxy = D67B835623E60F8000174A7B /* PBXContainerItemProxy */;
+		};
+		D67B836223E60F8000174A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D67B833E23E60F7F00174A7B /* recycle */;
+			targetProxy = D67B836123E60F8000174A7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D67B834823E60F7F00174A7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67B834923E60F7F00174A7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D67B834D23E60F8000174A7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67B834E23E60F8000174A7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D67B836723E60F8000174A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D67B836823E60F8000174A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D67B836A23E60F8000174A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F402F0B7220B9149559AB6A /* Pods-recycle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GGQ48ZJ7T;
+				INFOPLIST_FILE = "re<ycle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = robinleman;
+				PRODUCT_NAME = "re<ycle";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D67B836B23E60F8000174A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31B7AC6608C5D07594736B7 /* Pods-recycle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GGQ48ZJ7T;
+				INFOPLIST_FILE = "re<ycle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = robinleman;
+				PRODUCT_NAME = "re<ycle";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D67B836D23E60F8000174A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D042949A25CAFBB7EE5D2821 /* Pods-recycleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GGQ48ZJ7T;
+				INFOPLIST_FILE = "re<ycleTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lornleman.re-ycleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recycle.app/recycle";
+			};
+			name = Debug;
+		};
+		D67B836E23E60F8000174A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 357F6F43EF5446C1A06D14FB /* Pods-recycleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GGQ48ZJ7T;
+				INFOPLIST_FILE = "re<ycleTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lornleman.re-ycleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recycle.app/recycle";
+			};
+			name = Release;
+		};
+		D67B837023E60F8000174A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A30FD1A97405007E1137E3E /* Pods-recycle-recycleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GGQ48ZJ7T;
+				INFOPLIST_FILE = "re<ycleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lornleman.re-ycleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "re<ycle";
+			};
+			name = Debug;
+		};
+		D67B837123E60F8000174A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0DDD68001D08CAD61B536C6 /* Pods-recycle-recycleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GGQ48ZJ7T;
+				INFOPLIST_FILE = "re<ycleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lornleman.re-ycleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "re<ycle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D67B833A23E60F7F00174A7B /* Build configuration list for PBXProject "recycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67B836723E60F8000174A7B /* Debug */,
+				D67B836823E60F8000174A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67B836923E60F8000174A7B /* Build configuration list for PBXNativeTarget "recycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67B836A23E60F8000174A7B /* Debug */,
+				D67B836B23E60F8000174A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67B836C23E60F8000174A7B /* Build configuration list for PBXNativeTarget "recycleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67B836D23E60F8000174A7B /* Debug */,
+				D67B836E23E60F8000174A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67B836F23E60F8000174A7B /* Build configuration list for PBXNativeTarget "recycleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67B837023E60F8000174A7B /* Debug */,
+				D67B837123E60F8000174A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D67B833723E60F7F00174A7B /* Project object */;
+}

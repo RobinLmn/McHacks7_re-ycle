@@ -23,10 +23,20 @@ class ProductResult: UIViewController {
         
     struct SubProduct: Decodable {
         let packaging: String
+        let generic_name: String
+        let image_front_url: String
+    
+    }
+        
+    struct GlobalVariables {
+        static var packagingArray:[String] = [String]()
+        static var productName = "MyString"
+        static var productImageURL = "MyString"
         
     }
         
-    
+        
+
     let urlProduct = URL(string: "https://world.openfoodfacts.org/api/v0/product/737628064502.json")
 
     let task = URLSession.shared.dataTask(with: urlProduct!) {(data, response, error) in
@@ -42,6 +52,12 @@ class ProductResult: UIViewController {
             do {
                 var productToAnalyze = try JSONDecoder().decode( Product.self, from:data)
                 var packagings = productToAnalyze.product.packaging
+                GlobalVariables.packagingArray = packagings.components(separatedBy: ",")  // Creates an array with packaging elements
+                GlobalVariables.productName = productToAnalyze.product.generic_name
+                GlobalVariables.productImageURL = productToAnalyze.product.image_front_url
+                print(GlobalVariables.packagingArray)
+                print(GlobalVariables.productName)
+                print(GlobalVariables.productImageURL)
             }
             catch{
                 print("Product error")
@@ -53,7 +69,6 @@ class ProductResult: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 

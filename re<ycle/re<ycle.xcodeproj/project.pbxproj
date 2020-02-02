@@ -87,7 +87,6 @@
 		D67B833623E60F7F00174A7B = {
 			isa = PBXGroup;
 			children = (
-				84AB173023E6454A00401AF1 /* ViewController.swift */,
 				D67B834123E60F7F00174A7B /* re<ycle */,
 				D67B835823E60F8000174A7B /* re<ycleTests */,
 				D67B836323E60F8000174A7B /* re<ycleUITests */,
@@ -108,6 +107,7 @@
 		D67B834123E60F7F00174A7B /* re<ycle */ = {
 			isa = PBXGroup;
 			children = (
+				84AB173023E6454A00401AF1 /* ViewController.swift */,
 				84AB172C23E644BB00401AF1 /* Scanner.swift */,
 				D67B834223E60F7F00174A7B /* AppDelegate.swift */,
 				D67B834B23E60F8000174A7B /* Assets.xcassets */,

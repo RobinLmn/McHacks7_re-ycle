@@ -8,14 +8,19 @@
 
 import UIKit
 
-
 class BarcodeInput: UIViewController {
+    
+    struct BarcodeVariables{
+        static var barcodeFieldText = ""
+    }
 
     @IBOutlet weak var barcodeField: UITextField!
     
+    @IBOutlet weak var textView: UITextView!
     
     @IBAction func onEnterTapped(_ sender: Any) {
-        
+        print("test")
+        BarcodeVariables.barcodeFieldText = barcodeField.text!
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

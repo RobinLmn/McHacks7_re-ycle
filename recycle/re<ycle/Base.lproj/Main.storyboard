@@ -121,7 +121,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="onEnterTapped:" destination="cAU-Jf-dVV" eventType="touchUpInside" id="ev6-La-PpH"/>
+                                    <action selector="onEnterTapped:" destination="cAU-Jf-dVV" eventType="touchUpInside" id="lMj-2F-hqO"/>
                                     <segue destination="3X1-uG-WTh" kind="showDetail" id="PRf-K4-t6h"/>
                                 </connections>
                             </button>

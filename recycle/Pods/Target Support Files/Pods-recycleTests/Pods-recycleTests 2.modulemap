@@ -1,6 +1,0 @@
-framework module Pods_recycleTests {
-  umbrella header "Pods-recycleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

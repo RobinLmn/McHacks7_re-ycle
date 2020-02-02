@@ -1,6 +1,0 @@
-framework module Pods_recycle {
-  umbrella header "Pods-recycle-umbrella.h"
-
-  export *
-  module * { export * }
-}

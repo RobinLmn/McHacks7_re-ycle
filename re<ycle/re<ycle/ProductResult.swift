@@ -26,7 +26,6 @@ class ProductResult: UIViewController {
         
     }
         
-    var packagings
     
     let urlProduct = URL(string: "https://world.openfoodfacts.org/api/v0/product/737628064502.json")
 
@@ -42,7 +41,7 @@ class ProductResult: UIViewController {
             guard let data = data else { return }
             do {
                 var productToAnalyze = try JSONDecoder().decode( Product.self, from:data)
-                packagings = productToAnalyze.product.packaging
+                var packagings = productToAnalyze.product.packaging
             }
             catch{
                 print("Product error")
@@ -50,7 +49,6 @@ class ProductResult: UIViewController {
         }
     }
     task.resume()
-    
         
         // Do any additional setup after loading the view.
     }

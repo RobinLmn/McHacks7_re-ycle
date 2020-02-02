@@ -25,8 +25,9 @@ class ProductResult: UIViewController {
         let packaging: String
         
     }
-    
         
+    var packagings
+    
     let urlProduct = URL(string: "https://world.openfoodfacts.org/api/v0/product/737628064502.json")
 
     let task = URLSession.shared.dataTask(with: urlProduct!) {(data, response, error) in
@@ -40,8 +41,8 @@ class ProductResult: UIViewController {
             }
             guard let data = data else { return }
             do {
-                var product = try JSONDecoder().decode( Product.self, from:data)
-                print(product.product)
+                var productToAnalyze = try JSONDecoder().decode( Product.self, from:data)
+                packagings = productToAnalyze.product.packaging
             }
             catch{
                 print("Product error")
@@ -49,7 +50,6 @@ class ProductResult: UIViewController {
         }
     }
     task.resume()
-        
     
         
         // Do any additional setup after loading the view.

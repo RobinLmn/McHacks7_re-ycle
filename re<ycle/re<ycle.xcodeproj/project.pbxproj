@@ -18,6 +18,7 @@
 		D67B837323E6116500174A7B /* BarcodeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B837223E6116500174A7B /* BarcodeInput.swift */; };
 		D67B83B323E61C5D00174A7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B83B223E61C5D00174A7B /* SceneDelegate.swift */; };
 		D67B83B723E6278700174A7B /* ProductResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B83B623E6278700174A7B /* ProductResult.swift */; };
+		D67B83B923E6511900174A7B /* BarCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B83B823E6511900174A7B /* BarCodeScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D67B837223E6116500174A7B /* BarcodeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeInput.swift; sourceTree = "<group>"; };
 		D67B83B223E61C5D00174A7B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "re<ycle/SceneDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		D67B83B623E6278700174A7B /* ProductResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResult.swift; sourceTree = "<group>"; };
+		D67B83B823E6511900174A7B /* BarCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				D67B83B223E61C5D00174A7B /* SceneDelegate.swift */,
 				D67B837223E6116500174A7B /* BarcodeInput.swift */,
 				D67B83B623E6278700174A7B /* ProductResult.swift */,
+				D67B83B823E6511900174A7B /* BarCodeScanner.swift */,
 			);
 			path = "re<ycle";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				84AB173123E6454A00401AF1 /* ViewController.swift in Sources */,
 				D67B837323E6116500174A7B /* BarcodeInput.swift in Sources */,
+				D67B83B923E6511900174A7B /* BarCodeScanner.swift in Sources */,
 				D67B834323E60F7F00174A7B /* AppDelegate.swift in Sources */,
 				D67B83B723E6278700174A7B /* ProductResult.swift in Sources */,
 				84AB172D23E644BB00401AF1 /* Scanner.swift in Sources */,

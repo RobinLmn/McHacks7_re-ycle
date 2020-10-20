@@ -1,4 +1,4 @@
-# McHacks7
+# Re<ycle
 Recycle? You bet. This app is made for people who struggle with recycling. With one move, one click, you are now able to properly recycle (or not) your garbage.
 
 ## Demo

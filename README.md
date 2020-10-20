@@ -1,13 +1,12 @@
 # McHacks7
 Recycle? You bet. This app is made for people who struggle with recycling. With one move, one click, you are now able to properly recycle (or not) your garbage.
 
-## Download
-You will have to install Firebase by Google to run the project.
-Devpost: https://devpost.com/software/re-ycle
-
 ## Demo
  Demo is available at https://www.youtube.com/watch?v=3d5OHl6luGE&feature=emb_logo
 
+## Download
+You will have to install Firebase by Google to run the project.
+Devpost: https://devpost.com/software/re-ycle
 
 ## Inspiration
 
